@@ -58,14 +58,14 @@ console.log(`Média das notas: ${mediaNotas}`);
 
 let alunoMaiorNota = listnot[0];
 for (let i = 1; i < listnot.length; i++) {
-    if (listnot[i].nota > alunoMaiorNota.nota) {
+    if (listnot[i].nota >= alunoMaiorNota.nota) {
         alunoMaiorNota = listnot[i];
       }
     }
     console.log(`Aluno com a maior nota: ${alunoMaiorNota.nome} : ${alunoMaiorNota.nota}`);
     let alunoMenorNota = listnot[0];
     for (let i = 1; i < listnot.length; i++) {
-        if (listnot[i].nota < alunoMenorNota.nota) {
+        if (listnot[i].nota <= alunoMenorNota.nota) {
             alunoMenorNota = listnot[i];
           }
         }
