@@ -41,6 +41,9 @@ while (!parar) {
 
     somatotal += nota;
 }
+
+
+
 }
 
 for (let i = 0; i < + listnot.length; i++) {
@@ -51,6 +54,12 @@ const quantidadeAlunos = listnot.length;
 const mediaNotas = somatotal / quantidadeAlunos;
 
 console.log(`Quantidade de alunos: ${quantidadeAlunos}`);
-console.log(`Nota máxima: ${nmax}`);
-console.log(`Nota mínima: ${nmin}`);
+console.log(`Nota máxima é do aluno : ${nmax}`);
+console.log(`Nota mínima é do aluno: ${nmin}`);
 console.log(`Média das notas: ${mediaNotas}`);
+console.log("Maior nota:")
+console.log(listnot[0].nome);
+console.log(listnot[0].nota);
+console.log("Menor nota:")
+console.log(listnot[1].nome);
+console.log(listnot[1].nota);
