@@ -10,6 +10,10 @@ let nmin = 10;
 let somatotal = 0;
 let parar = false
 while (!parar) {
+    let opcao = confirm("Deseja adicionar algum aluno?")
+    if (opcao == false) {
+        parar = true;
+    }else{
     const nome = prompt("Digite o nome do aluno (ou 'sair' para encerrar):");
     if (nome === 'sair') {
         parar = true;
@@ -30,6 +34,7 @@ while (!parar) {
         }
         somatotal += nota;
     }
+}
 }
 let alunoMaiorNota = listnot[0];
 let alunoMenorNota = listnot[0];
