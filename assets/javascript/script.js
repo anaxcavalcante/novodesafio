@@ -4,8 +4,7 @@ const listnot = [];
 function respostas(nq) {
     const resposta = prompt(`Digite a resposta da questão ${nq} (A, B, C, D ou E):`);
     return resposta.toUpperCase();
-}
-let nmax = 0;
+}let nmax = 0;
 let nmin = 10;
 let somatotal = 0;
 let parar = false
